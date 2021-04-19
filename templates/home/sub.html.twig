@@ -1,0 +1,17 @@
+{% extends 'base.html.twig' %}
+
+{% block body %}
+    <div>I won't show up</div>
+
+    <turbo-frame id="the_frame_id">
+        <a class="btn btn-primary btn-block" href="{{ path('home') }}"><i class="bi bi-arrow-left"></i> back</a>
+        <ul class="list-group">
+            <li class="list-group-item">Cras justo odio</li>
+            <li class="list-group-item">Dapibus ac facilisis in</li>
+            <li class="list-group-item">Morbi leo risus</li>
+            <li class="list-group-item">Porta ac consectetur ac</li>
+            <li class="list-group-item">Vestibulum at eros</li>
+        </ul>
+
+    </turbo-frame>
+{% endblock %}
